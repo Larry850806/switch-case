@@ -1,0 +1,15 @@
+{
+  "name": "switch-case",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Larry850806/switch-case.git",
+  "author": "Larry <pudding850806@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
