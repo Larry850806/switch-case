@@ -3,14 +3,14 @@ function switchCase(cases, defaultValue){
         for(let prop in cases){
             if(prop === variable){
                 if(typeof cases[prop] === 'function'){
-                    return cases[prop]()
+                    return cases[prop](variable)
                 } else {
                     return cases[prop]
                 }
             }
         }
         if(typeof defaultValue === 'function'){
-            return defaultValue()
+            return defaultValue(variable)
         } else {
             return defaultValue
         }
