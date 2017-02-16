@@ -1,20 +1,20 @@
-# switch-case
+# switchhh
 
-switch-case is a npm package to simplify switch syntax in javascript
+switchhh is a npm package to simplify switch syntax in javascript
 
 ## Install
 
 ```bash
-npm install switch-case
-# yarn add switch-case
+npm install switchhh
+# yarn add switchhh
 ```
 
 ## Basic Usage
 
 ```js
-const switchCase = require('switch-case')
+const switchhh = require('switchhh')
 
-let switcher = switchCase({
+let switcher = switchhh({
   'ten': 10,
   'twenty': 20,
 }, 0)
@@ -27,9 +27,9 @@ console.log(switcher('something else')) // 0
 ## Function as corresponding value
 
 ```js
-const switchCase = require('switch-case')
+const switchhh = require('switchhh')
 
-let switcher = switchCase({
+let switcher = switchhh({
   'ten': () => 10,
   'twenty': () => 20,
 }, () => 0)
@@ -38,3 +38,27 @@ console.log(switcher('ten'))            // 10
 console.log(switcher('twenty'))         // 20
 console.log(switcher('something else')) // 0
 ```
+
+# License
+
+The MIT License (MIT)
+
+Copyright (c) 2016 Larry Lu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
