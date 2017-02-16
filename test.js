@@ -2,7 +2,7 @@ const should = require('should')
 const switchCase = require('./index')
 
 describe('#when the case is a value', () => {
-    it(`should return correct value when the case exists`, (done) => {
+    it(`should return corresponding value when the case exists`, (done) => {
         let val = switchCase({
             'a': 10,
             'b': 20,
@@ -25,7 +25,7 @@ describe('#when the case is a value', () => {
 })
 
 describe('#when the case is a function', () => {
-    it(`should run correct function when the case exists`, (done) => {
+    it(`should run corresponding function when the case exists`, (done) => {
         let val = switchCase({
             'a': () => 10,
             'b': 20,
