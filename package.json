@@ -1,5 +1,6 @@
 {
   "name": "switch-case",
+  "description": "A npm package to simplify switch syntax in javascript",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Larry850806/switch-case.git",
