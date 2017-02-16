@@ -1,20 +1,20 @@
-# switch-case
+# switchhh
 
-switch-case is a npm package to simplify switch syntax in javascript
+switchhh is a npm package to simplify switch syntax in javascript
 
 ## Install
 
 ```bash
-npm install switch-case
-# yarn add switch-case
+npm install switchhh
+# yarn add switchhh
 ```
 
 ## Basic Usage
 
 ```js
-const switchCase = require('switch-case')
+const switchhh = require('switchhh')
 
-let switcher = switchCase({
+let switcher = switchhh({
   'ten': 10,
   'twenty': 20,
 }, 0)
@@ -27,9 +27,9 @@ console.log(switcher('something else')) // 0
 ## Function as corresponding value
 
 ```js
-const switchCase = require('switch-case')
+const switchhh = require('switchhh')
 
-let switcher = switchCase({
+let switcher = switchhh({
   'ten': () => 10,
   'twenty': () => 20,
 }, () => 0)
